@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  db:
+    image: docker.io/library/postgres:latest
+    container_name: rede_social_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123postgres
+      POSTGRES_DB: rs_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data:z
+
