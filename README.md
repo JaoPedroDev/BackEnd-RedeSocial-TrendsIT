@@ -1,2 +1,7 @@
-# BackEnd-RedeSocial-TrendsIT
-Back End para rede social do desafio proposto pela TrendsIT
+# Como iniciar:
+```
+    docker compose up -d
+    ./mvnw spring-boot:run
+```
+
+
